@@ -6,4 +6,4 @@ install: pip install ansible pep8
 script:
   - pep8 .
   - echo localhost > inventory
-  - ansible-playbox -i inventory --syntax-check test_playbook.yml
+  - ansible-playbook -i inventory --syntax-check test_playbook.yml
