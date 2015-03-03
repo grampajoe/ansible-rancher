@@ -1,0 +1,16 @@
+---
+
+- name: Install Docker
+  yum: name=docker
+
+- name: Install EPEL
+  yum: name="epel-release"
+
+- name: Install pip
+  yum: name="python-pip"
+
+- name: Install docker-py
+  pip: name="docker-py"
+
+- name: Start Docker
+  service: name=docker state=started enabled=yes

@@ -1,2 +1,13 @@
 ---
-# tasks file for rancher
+
+- include: install_docker.yml
+
+- name: Detect Docker API version
+  shell: "docker version | grep API | grep -oE '[0-9.]+' | head -n 1"
+  register: docker_api_version
+
+- name: Start the Rancher Docker container
+  docker: |
+    image="rancher/server"
+    ports="8080:{{ rancher_port }}"
+    docker_api_version="{{ docker_api_version.stdout }}"
