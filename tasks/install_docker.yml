@@ -1,10 +1,10 @@
 ---
 
-- name: Install Docker
-  yum: name=docker
-
 - name: Install EPEL
   yum: name="epel-release"
+
+- name: Install Docker
+  yum: name="docker"
 
 - name: Install pip
   yum: name="python-pip"

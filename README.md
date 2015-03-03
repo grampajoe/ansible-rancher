@@ -9,7 +9,7 @@ Installs the [Rancher](http://rancher.com/rancher-io/) orchestration service for
 Requirements
 ------------
 
-This playbook has been tested on the following OS's:
+This role has been tested on the following OS's:
 
 - CentOS 7
 
