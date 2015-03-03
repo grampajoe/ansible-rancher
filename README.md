@@ -1,7 +1,7 @@
 rancher
 =========
 
-Installs the [Rancher](https://rancher.io/rancher) orchestration service for Docker.
+Installs the [Rancher](http://rancher.com/rancher-io/) orchestration service for Docker.
 
 Requirements
 ------------
