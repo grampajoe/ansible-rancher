@@ -1,9 +1,8 @@
 language: python
 python: "2.7"
 
-install: pip install ansible pep8
+install: pip install ansible
 
 script:
-  - pep8 .
   - echo localhost > inventory
-  - ansible-playbook -i inventory --syntax-check test_playbook.yml
+  - ansible-playbook -i inventory --syntax-check test.yml
