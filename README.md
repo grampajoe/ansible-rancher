@@ -16,7 +16,8 @@ This role has been tested on the following OS's:
 Role Variables
 --------------
 
-- `rancher_port` - External port for the Rancher server.
+- `rancher_server_tag` - Tag of the `rancher/server` image to install.
+- `rancher_server_port` - External port for the Rancher server.
 
 Dependencies
 ------------

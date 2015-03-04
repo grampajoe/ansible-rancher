@@ -8,8 +8,8 @@
 
 - name: Start the Rancher Docker container
   docker: |
-    image="rancher/server"
-    ports="8080:{{ rancher_port }}"
+    image="rancher/server:{{ rancher_server_tag }}"
+    ports="8080:{{ rancher_server_port }}"
     docker_api_version="{{ docker_api_version.stdout }}"
 
 - name: Wait for the daemon to start up
