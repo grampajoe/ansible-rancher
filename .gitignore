@@ -58,3 +58,13 @@ inventory
 
 # Vagrant
 .vagrant
+
+# Kitchen
+.kitchen
+
+# Lockfiles
+*file.lock
+
+# Librarian
+.librarian
+tmp

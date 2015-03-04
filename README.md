@@ -21,6 +21,8 @@ Role Variables
 Dependencies
 ------------
 
+- `grampajoe.docker-multi`
+
 Example Playbook
 ----------------
 

@@ -1,0 +1,15 @@
+---
+driver: vagrant
+
+provisioner:
+  name: ansible_playbook
+  hosts: all
+
+platforms:
+  - name: centos-7.0
+    driver_config:
+      box: grampajoe/centos-7.0-ansible
+      box_url: 'https://atlas.hashicorp.com/grampajoe/boxes/centos-7.0-ansible/versions/1.0.0/providers/virtualbox.box'
+
+suites:
+  - name: default

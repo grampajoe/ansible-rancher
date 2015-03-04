@@ -11,4 +11,6 @@ galaxy_info:
   categories:
     - cloud
     - system
-dependencies: []
+dependencies:
+  - grampajoe.docker-multi
+version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 
-- include: install_docker.yml
+- include: install.yml
 
 - name: Detect Docker API version
   shell: "docker version | grep API | grep -oE '[0-9.]+' | head -n 1"
@@ -11,3 +11,6 @@
     image="rancher/server"
     ports="8080:{{ rancher_port }}"
     docker_api_version="{{ docker_api_version.stdout }}"
+
+- name: Wait for the daemon to start up
+  wait_for: port=8080

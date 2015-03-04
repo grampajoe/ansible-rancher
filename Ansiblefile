@@ -1,0 +1,6 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+site "https://galaxy.ansible.com/api/v1"
+
+role "grampajoe.rancher", path: "."
+role "grampajoe.docker-multi"
