@@ -13,4 +13,4 @@ galaxy_info:
     - system
 dependencies:
   - grampajoe.docker-multi
-version: 1.0.0
+
